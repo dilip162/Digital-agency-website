@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* ###### Utility Classes ######### */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.btn{
+    padding: 1.5rem 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.btn_hollow{
+    border: 2px solid white;
+}
+
+.btn_primary{
+    background-color: rgb(49, 172, 220);
+    color: white;
+}
+
+.btn_pink{
+    background-color: rgb(240, 91, 116);
+    color: white;
+}
+
+
+/* ################ home ############# */
+
+nav{
+    padding: 3.5rem 0;
+}
+
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav_container h1{
+    font-size: 3rem;
+}
+
+.nav_container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_container ul li{
+    margin: 0 1.5rem;
+    list-style: none;  
+    
+}
+
+.nav_container ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;  
+}
+
+.nav_container ul li i{
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+#home{
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, #3264f5 2%,#7004bc 82%);
+}
+
+
+.main_section{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 6rem 5rem;
+    width: 55%;
+    margin: auto;
+}
+
+.img_container{
+    width: 50%;
+}
+
+.img_container img{
+    height: 425px;
+    animation: animate 1.8s infinite ease-in-out;
+}
+
+@keyframes animate{
+    50%{
+        transform: translateX(-4px);
+    }
+    100%{
+        transform:translateX(4px)
+    }
+}
+
+.text_container{
+    width: 50%;
+}
+
+.text_container h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.text_container p{
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.scroll_down{
+    position: absolute;
+    bottom:2%;
+    left: 50%;
+    color: white;
+}
+
+.scroll_down i{
+    font-size: 1rem;
+}
+
+/* ################### About section ################## */
+
+.about_container{
+    padding: 2.5rem;
+}
+
+.about_first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about_text{
+    width: 50%;
+}
+
+.about_text h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.about_text_container h1{
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 500;
+    color: rgb(71, 66, 66);
+    margin-top: 1rem;
+}
+
+.about_text_container p{
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+}
+
+.about_img{
+    width: 50%;
+}
+
+.about_img img{
+    height: 400px;
+}
+
+.about_second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 0;
+    
+}
+
+.process_wrap{
+    display: block;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    margin: 1.5rem 0;
+    border-radius: 50%;
+}
+
+.icon_wrap i{
+    color: white;
+}
+
+.first{
+    background-color:rgb(85, 85, 228);
+}
+
+.second{
+    background-color: rgb(44, 44, 109);
+}
+.third{
+    background-color: rgb(181, 55, 181);
+}
+.fourth{
+    background-color: rgb(196, 48, 105);
+}
+
+.icon_wrap i{
+    font-size: 30px;
+}
+
+.process_wrap h4{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: rgb(83, 81, 81);
+}
+
+/* ########### about second ######### */
+
+.about_second_part{
+    padding: 8rem 0;
+    min-height: 80vh;
+    background:linear-gradient(to right, #237afe 2%, #03a9f5 82%);
+}
+
+.about_second_part_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_second_img{
+    width: 50%;
+}
+
+.about_second_img img{
+    height: 350px;
+}
+
+.about_second_text{
+    width: 50%;
+    color: white;
+}
+
+.about_second_text h1,.about_second_text h3{
+    color: white;
+}
+
+.data_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data_box i{
+    font-size: 40px;
+}
+
+/* ########### About third ########### */
+
+.about_third{
+    padding: 5rem 0;
+}
+
+.about_third_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_third_text{
+    width: 40vw;
+}
+
+.about_third_text h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.about_text_container_third{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about_text_container_third h1{
+    font-size: 4rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    color: rgb(71, 66, 66);
+    /* margin: 0 2.5rem; */
+
+}
+
+.about_text_container_third p{    
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+    
+.directors{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 4rem;
+    
+}
+
+.director{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 0;
+
+}
+
+.director img{
+    height: 250px;
+}
+
+.director h1{
+    font-size: 2.7rem;
+    font-weight: 300;
+    padding: 1.8rem 0 0 0;
+    color: rgb(76, 71, 71);
+}
+
+.director h3{
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding: 1.5rem 0;
+    color: rgb(76, 71, 71);
+}
+
+.director i{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgb(76, 71, 71);
+    margin: 0 1.5rem;
+}
+
+/* ##################### Clients ############### */
+
+.clients{   
+    padding: 5rem 0;
+    border: 1px solid black;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #3264f5 2%,#7004bc 82%);
+    color: white;
+}
+
+.clients_container{
+    width: 50vw;
+   
+}
+
+
+.clients_container h1{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+
+}
+
+.clients_container p{
+    font-size: 1.8rem;
+    text-align: center;
+    text-justify: auto;
+    margin: 3rem 0;
+    line-height: 3rem;
+
+}
+
+.clients_container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: rgb(230, 126, 143);
+}
+.clients_container h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem 0;    
+    font-weight: 300;
+}
+
+.stars{
+    text-align: center;
+    font-size: 1.5rem;
+    color: goldenrod;
+}
+
+
+/* ######### Our blog ########## */
+
+.our_blog{
+    padding: 5rem 0;
+}
+
+.our_blog_container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;   
+}
+
+.our_blog_text{
+margin: 6rem 0;
+}
+
+.our_blog_text h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: grey;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.our_blog_text h1{
+font-size: 4rem;
+line-height: 3.2rem;
+font-weight: 500;
+text-align: center;
+}
+
+.our_blog_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75vw;
+}
+
+.card{
+    width: 351px;
+    border-radius: 18px;
+}
+
+.card_text{
+    padding: 2.5rem;
+}
+
+.card_img img{
+    width: 100%;
+    height: 234px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+
+}
+
+.card_text h3,h1{
+    margin: 1.5rem 0;
+}
+
+.card_text h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: rgb(227, 86, 110);
+}
+
+.card_text h1{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: rgb(59, 51, 51);
+}
+
+.card p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.author h2{
+    margin: 0 1.5rem;
+    font-weight: 400;
+}
+
+.author_img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4785e3;
+    
+
+}
+
+.author_img img{
+    height: 45px;
+    width: 42px;
+}
+
+
+
+/* ############# Contact ############## */
+
+.contact_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 4rem;
+}
+
+
+
+.fields{
+    display: flex;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_container h1{
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 500;
+    color: rgb(43, 38, 38);
+}
+
+textarea{
+    resize: none;
+    padding: 1.5rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+}
+
+.input{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.input input{
+    padding: 1rem;
+    width: 100%;
+}
+
+.button{
+    width: 100%;
+}
+
+
+.button button{
+    width: 100%;
+    padding: 1rem 3rem;
+    background-color: #7004bc;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+
+
+.location_container{
+    width: 40%;
+    padding: 4rem;
+}
+.location_container h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: rgb(43, 38, 38);
+
+}
+
+.location_container p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(63, 57, 57);
+
+}
+
+.address h3 i{
+    font-size: 2.5rem;
+    color: #7004bc;
+    margin-right: 1.5rem;
+}
+
+.address h3{
+    font-size: 1.4rem;
+    margin: 4.5rem 0;
+    font-weight: 300;
+
+}
+
+
+/* ############### for mobile screen ############# */
+
+@media screen and (max-width: 1535px) {
+
+    .container{
+        width: 100%;
+    }
+    .main_section{
+        flex-direction: column;
+
+        padding: 1rem 0;
+    }
+
+    .about_first{
+        flex-direction: column;
+    }
+
+    .scroll_down{
+        display: none;
+    }
+
+    .about_second_part_container{
+        flex-direction: column;
+    }
+
+    .about_second_text{
+        margin-top: 2rem;
+    }
+
+    .directors{
+        flex-direction: column;
+    }
+
+  }
+
+  @media screen and (max-width: 1470px){
+
+    .our_blog_cards{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 2rem 0;
+        width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 1400px){
+
+    .contact_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_container{
+        /* width: 90%; */
+    }
+    .location_container{
+        width: 90%;
+        text-align: center;
+    }
+  }
