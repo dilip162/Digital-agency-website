@@ -640,6 +640,48 @@ textarea{
 }
 
 
+/* ################## footer ############### */
+
+
+.footer_container{
+    padding: 7rem 5rem 5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socials span{
+    padding: 1.8rem;
+    border-radius: 50%;    
+    margin: 1rem 1rem;
+}
+
+.socials span i{
+    font-size: 2rem;
+}
+
+
+.socials span:hover{
+    background-color: rgb(87, 87, 223);
+    color: white;    
+}
+
+.socials i{
+    font-size: 1.5rem;
+}
+
+.copyright{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.copyright h2{
+font-weight: 400;
+color: rgb(65, 61, 61);
+}
+
+
 /* ############### for mobile screen ############# */
 
 @media screen and (max-width: 1535px) {
