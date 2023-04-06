@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,11 +21,12 @@ html{
 }
 
 .btn{
-    padding: 1.5rem 3rem;
+    padding: 1.2rem 4rem;
     border-radius: 3rem;
     cursor: pointer;
     outline: none;
     border: none;
+    font-weight: 500;
 }
 
 .btn_hollow{
@@ -34,18 +36,23 @@ html{
 .btn_primary{
     background-color: rgb(49, 172, 220);
     color: white;
+    
 }
 
 .btn_pink{
-    background-color: rgb(240, 91, 116);
+    background-color: #f023b6;
     color: white;
+}
+
+.alt_pink{
+    color: #f023b6;
 }
 
 
 /* ################ home ############# */
 
 nav{
-    padding: 3.5rem 0;
+    padding: 3.9rem 0;
 }
 
 .nav_container{
@@ -55,8 +62,8 @@ nav{
     color: white;
 }
 
-.nav_container h1{
-    font-size: 3rem;
+.nav_container .logo img{
+    max-width: 150px;
 }
 
 .nav_container ul{
@@ -73,8 +80,10 @@ nav{
 
 .nav_container ul li a {
     text-decoration: none;
-    font-size: 1.5rem;
-    color: white;  
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .nav_container ul li i{
@@ -95,7 +104,7 @@ nav{
     justify-content:space-between;
     flex-wrap: wrap;
     padding: 6rem 5rem;
-    width: 55%;
+    width: 60%;
     margin: auto;
 }
 
@@ -124,12 +133,22 @@ nav{
 .text_container h1{
     font-size: 5rem;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.alt_color{
+    color: #03a9f5;
 }
 
 .text_container p{
     margin: 2.5rem 0;
     font-size: 1.5rem;
     color: white;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+    letter-spacing: 0;
 }
 
 .scroll_down{
@@ -137,6 +156,7 @@ nav{
     bottom:2%;
     left: 50%;
     color: white;
+    font-weight: 400;
 }
 
 .scroll_down i{
@@ -145,8 +165,12 @@ nav{
 
 /* ################### About section ################## */
 
+#about{
+    background-color: rgb(249, 249, 249);
+}
+
 .about_container{
-    padding: 2.5rem;
+    padding: 8rem 2.5rem;
 }
 
 .about_first{
@@ -161,9 +185,9 @@ nav{
 }
 
 .about_text h2{
-    font-weight: 300;
-    font-size: 1.5rem;
     color: grey;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .about_text_container h1{
@@ -220,17 +244,17 @@ nav{
 }
 
 .first{
-    background-color:rgb(85, 85, 228);
+    background-color:#007aff;
 }
 
 .second{
-    background-color: rgb(44, 44, 109);
+    background-color: #41526b;
 }
 .third{
-    background-color: rgb(181, 55, 181);
+    background-color: #9556f5;
 }
 .fourth{
-    background-color: rgb(196, 48, 105);
+    background-color: #f021b6;
 }
 
 .icon_wrap i{
@@ -378,7 +402,6 @@ nav{
 
 .clients{   
     padding: 5rem 0;
-    border: 1px solid black;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -389,26 +412,29 @@ nav{
 }
 
 .clients_container{
-    width: 50vw;
-   
+    width: 50vw;   
 }
 
 
 .clients_container h1{
     text-align: center;
-    font-size: 4.5rem;
-    font-weight: 500;
-    line-height: 5rem;
-
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif
 }
 
 .clients_container p{
-    font-size: 1.8rem;
     text-align: center;
     text-justify: auto;
     margin: 3rem 0;
-    line-height: 3rem;
-
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-style: italic;
 }
 
 .clients_container h2{
@@ -432,6 +458,10 @@ nav{
 
 
 /* ######### Our blog ########## */
+
+#blog{
+    background-color: rgb(247, 247, 247);
+}
 
 .our_blog{
     padding: 5rem 0;
@@ -473,6 +503,7 @@ text-align: center;
 .card{
     width: 351px;
     border-radius: 18px;
+    background-color: #fff;
 }
 
 .card_text{
@@ -520,25 +551,27 @@ text-align: center;
 }
 
 .author_img{
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4785e3;
+    
     
 
 }
 
 .author_img img{
-    height: 45px;
-    width: 42px;
+    max-width: 50px;
+    background-color: #4785e3;
+    border-radius: 50%;
 }
 
 
 
 /* ############# Contact ############## */
+
+.contact{
+    padding: 5rem 0;
+}
 
 .contact_container{
     display: flex;
@@ -566,9 +599,10 @@ text-align: center;
 }
 .form_container h1{
     text-align: left;
-    font-size: 4rem;
-    font-weight: 500;
-    color: rgb(43, 38, 38);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #404854;
 }
 
 textarea{
@@ -604,6 +638,12 @@ textarea{
     font-size: 1.5rem;
     margin: 2rem 0;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
+    font-weight: 600;
+}
+
+.button button:hover{
+    background-color: rgb(49, 172, 220)
 }
 
 
@@ -642,6 +682,9 @@ textarea{
 
 /* ################## footer ############### */
 
+footer{
+    background-color: whitesmoke;
+}
 
 .footer_container{
     padding: 7rem 5rem 5rem 5rem;
@@ -668,6 +711,7 @@ textarea{
 
 .socials i{
     font-size: 1.5rem;
+    color: #696969;
 }
 
 .copyright{
@@ -677,8 +721,11 @@ align-items: center;
 }
 
 .copyright h2{
-font-weight: 400;
-color: rgb(65, 61, 61);
+font-family: 'Roboto', sans-serif;
+color: #696969;
+font-weight: 300;
+line-height: 30px;
+letter-spacing: 0.2px;
 }
 
 
