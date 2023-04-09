@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web template</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
     <script src="https://kit.fontawesome.com/91f2082c15.js" defer crossorigin="anonymous"></script>
 </head>
 <body>
@@ -106,8 +115,7 @@
             <div class="about_second_text">
                 <h2>We are MegaOne company</h2>
                     <div class="about_text_container">
-                        <h1>We are making design</h1>
-                        <h1>Better for everyone</h1>
+                        <h1>We heve done some<br>great stuff.</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id nesciunt nemo odio dolore quod modi facere? Soluta ipsa  optio, nesciunt?</p>
                         <div class="data_container">
 
@@ -143,8 +151,7 @@
                 <h2>We are MegaOne company</h2>
 
                 <div class="about_text_container_third">
-                    <h1>We have some <span class="alt_color">great</span></h1>
-                    <h1>talented stuff</h1>
+                    <h1>We have some <span class="alt_color">great</span><br>talented stuff</h1>                   
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam id nesciunt nemo odio dolore quod modi facere nesciunt?</p>
                 </div>
             </div>
@@ -217,19 +224,58 @@
     <!-- ###################### Clients #################### -->
 
     <section class="clients" id="clients">
+        <h1>Some great words from<br>our clients</h1>
         <div class="clients_container">
-            <h1>Some great words from<br>our clients</h1>
-            <p>Lorem ipsum dolor sit amet.Ratione rerum quae placeat rerum quae placeat sint? Nulla quaerat animi Ratione rerum quae placeat sint? Nulla quaerat animi maiores reiciendis laboriosam aut architecto ad modi. Vitae nostrum laborum dignissimos. Voluptatum enim officia laboriosam recusandae? Harum ex vel praesentium?</p>
-            <h2>David Villas</h2>
-            <h4>Designer, Company Name</h4>
-            
-            <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-            </div>
+
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+  
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <p>Lorem ipsum dolor sit amet.Ratione rerum quae placeat rerum quae placeat sint? Nulla quaerat animi Ratione rerum quae placeat sint? Nulla quaerat animi maiores reiciendis laboriosam aut architecto ad modi. Vitae nostrum laborum dignissimos. Voluptatum enim officia laboriosam recusandae? Harum ex vel praesentium?</p>
+                        <h2>David Villas</h2>
+                        <h4>Designer, Company Name</h4>
+                        
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                  </div>
+
+                  <div class="carousel-item">
+                   <p>Lorem ipsum dolor sit amet.Ratione rerum quae placeat rerum quae placeat sint? Nulla quaerat animi Ratione rerum quae placeat sint? Nulla quaerat animi maiores reiciendis laboriosam aut architecto ad modi. Vitae nostrum laborum dignissimos. Voluptatum enim officia laboriosam recusandae? Harum ex vel praesentium?</p>
+                        <h2>David Villas</h2>
+                        <h4>Designer, Company Name</h4>
+                        
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <p>Lorem ipsum dolor sit amet.Ratione rerum quae placeat rerum quae placeat sint? Nulla quaerat animi Ratione rerum quae placeat sint? Nulla quaerat animi maiores reiciendis laboriosam aut architecto ad modi. Vitae nostrum laborum dignissimos. Voluptatum enim officia laboriosam recusandae? Harum ex vel praesentium?</p>
+                        <h2>David Villas</h2>
+                        <h4>Designer, Company Name</h4>
+                        
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                  </div>
+                </div>
+               
+              </div>
         </div>
     </section>
 
@@ -239,8 +285,7 @@
         <div class="our_blog_container container">
             <div class="our_blog_text">
                 <h3>We are megaOne company</h3>
-                <h1>Our <span class="alt_color">latest blog</span> will keep</h1>
-                <h1>everyone updated</h1>
+                <h1>Our <span class="alt_color">latest blog</span> will keep<br>everyone updated</h1>
             </div>
 
             <div class="our_blog_cards">
@@ -305,6 +350,7 @@
 
     <section id="contact" class="contact">
         <div class="contact_container container">
+
             <div class="form_container">
                 <h1>Get In Touch</h1>
                 <div class="fields">
@@ -321,7 +367,7 @@
                     </div>
 
                     <div class="textarea">
-                        <textarea cols="60" rows="10" placeholder="Message"></textarea>
+                        <textarea placeholder="Message"></textarea>
                     </div>
                 </div>
                 <div class="button">
@@ -335,7 +381,7 @@
                 <div class="address">
                     <h3><i class="fa-solid fa-location-dot"></i>  123 Park Avenue, New York,United States</h3>
                     <h3><i class="fa-solid fa-phone"></i>  +16 3112345678 +16 3112345678</h3>
-                    <h3><i class="fa-solid fa-envelope"></i> email@website.com abc@email.com</h3>
+                    <h3 class="email"><i class="fa-solid fa-envelope"></i> email@website.com abc@email.com</h3>
                 </div>
             </div>
         </div>
@@ -346,12 +392,12 @@
     <footer>
         <div class="footer_container">
             <div class="socials">
-                <span><i class="fa-brands fa-facebook-f"></i></span>
-                <span><i class="fa-brands fa-twitter"></i></span>
-                <span><i class="fa-brands fa-google-plus-g"></i></span>
-                <span><i class="fa-brands fa-linkedin-in"></i></span>
-                <span><i class="fa-brands fa-instagram"></i></span>
-                <span><i class="fa-brands fa-pinterest"></i></span>
+                <div class="social_icon"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="social_icon"><i class="fa-brands fa-twitter"></i></div>
+                <div class="social_icon"><i class="fa-brands fa-google-plus-g"></i></div>
+                <div class="social_icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="social_icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="social_icon"><i class="fa-brands fa-pinterest"></i></div>
             </div>
             <div class="copyright">
                 <h2>© 2023 MegaOne. Made With Love By Themesindustry</h2>

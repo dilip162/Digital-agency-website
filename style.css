@@ -10,6 +10,7 @@
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 /* ###### Utility Classes ######### */
@@ -21,16 +22,17 @@ html{
 }
 
 .btn{
-    padding: 1.2rem 4rem;
+    padding: 1.5rem 4.5rem;
     border-radius: 3rem;
     cursor: pointer;
     outline: none;
     border: none;
     font-weight: 500;
+    font-size: 1.3rem;
 }
 
 .btn_hollow{
-    border: 2px solid white;
+    border: 0.2rem solid white;
 }
 
 .btn_primary{
@@ -119,10 +121,10 @@ nav{
 
 @keyframes animate{
     50%{
-        transform: translateX(-4px);
+        transform: translateX(-3px);
     }
     100%{
-        transform:translateX(4px)
+        transform:translateX(3px)
     }
 }
 
@@ -157,6 +159,7 @@ nav{
     left: 50%;
     color: white;
     font-weight: 400;
+    font-size: 1.3rem;
 }
 
 .scroll_down i{
@@ -182,7 +185,15 @@ nav{
 
 .about_text{
     width: 50%;
+    transform: translateX(-150%);
+    animation:moving_left 1s ease-in-out forwards;
 }
+
+@keyframes moving_left {    
+    100%{
+      transform: translateX(0%);
+    }
+  }
 
 .about_text h2{
     color: grey;
@@ -207,10 +218,25 @@ nav{
 
 .about_img{
     width: 50%;
+    transform: translateX(150%);
+    animation:moving_right 1s ease-in-out forwards;
 }
 
+@keyframes moving_right {    
+    100%{
+      transform: translateX(0%);
+    }
+  }
+
+
 .about_img img{
-    height: 400px;
+    max-height: 400px;
+    margin: auto;
+    object-fit: cover;
+
+
+
+    max-width: 100%;
 }
 
 .about_second{
@@ -284,15 +310,20 @@ nav{
 
 .about_second_img{
     width: 50%;
+    transform: translateX(-150%);
+    animation:moving_left 1s ease-in-out forwards;
 }
 
+
 .about_second_img img{
-    height: 350px;
+    max-height: 35rem;
 }
 
 .about_second_text{
     width: 50%;
     color: white;
+    transform: translateX(150%);
+    animation:moving_right 1s ease-in-out forwards;
 }
 
 .about_second_text h1,.about_second_text h3{
@@ -303,6 +334,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .data_box i{
@@ -341,11 +373,11 @@ nav{
 }
 .about_text_container_third h1{
     font-size: 4rem;
-    line-height: 2.5rem;
+    line-height: 5rem;
     font-weight: 500;
     color: rgb(71, 66, 66);
-    /* margin: 0 2.5rem; */
-
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .about_text_container_third p{    
@@ -359,6 +391,7 @@ nav{
 .directors{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2.5rem 4rem;
     
@@ -374,7 +407,7 @@ nav{
 }
 
 .director img{
-    height: 250px;
+    max-height: 250px;
 }
 
 .director h1{
@@ -402,7 +435,7 @@ nav{
 
 .clients{   
     padding: 5rem 0;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -411,17 +444,16 @@ nav{
     color: white;
 }
 
-.clients_container{
-    width: 50vw;   
-}
-
-
-.clients_container h1{
+.clients h1{
     text-align: center;
     font-size: 40px;
     font-weight: 600;
     line-height: 1.2;
     font-family: 'Montserrat', sans-serif
+}
+
+.clients_container{
+    width: 50vw;   
 }
 
 .clients_container p{
@@ -487,23 +519,33 @@ margin: 6rem 0;
 }
 
 .our_blog_text h1{
-font-size: 4rem;
-line-height: 3.2rem;
-font-weight: 500;
-text-align: center;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 500;
+    color: rgb(71, 66, 66);
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .our_blog_cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 75vw;
 }
 
 .card{
-    width: 351px;
+    max-width: 351px;
     border-radius: 18px;
     background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin: auto;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 10px 1px rgb(187, 181, 181);
+    transform: translateY(-4px);
 }
 
 .card_text{
@@ -576,6 +618,8 @@ text-align: center;
 .contact_container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 .form_container{
@@ -583,44 +627,73 @@ text-align: center;
     flex-direction: column;
     width: 60%;
     padding: 4rem;
+    transform: translateX(-150%);
+    animation:moving_left 1s ease-in-out forwards;
 }
 
-
-
-.fields{
-    display: flex;
-}
-
-.inputs{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 .form_container h1{
     text-align: left;
     font-size: 40px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     color: #404854;
+    margin-bottom: 3.2rem;
+}
+
+
+
+.fields{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 43%;
+    padding-bottom: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.input{
+    border-radius: 0.5rem;
+    margin-bottom: 2.2rem;
+}
+
+.input input{
+    padding: 1.2rem;
+    width: 100%;
+    font-weight: 500;
+    border: 1px solid #d4d4d4;
+    color: #495057;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+
+.textarea{
+    width: 57%;
+    padding-left: 1.2rem;
+    padding-bottom: 3.6rem;
 }
 
 textarea{
     resize: none;
     padding: 1.5rem;
-    margin-left: 2.5rem;
-    border-radius: 1rem;
-}
-
-.input{
-    width: 100%;
     border-radius: 0.5rem;
+    margin-bottom: 2.2rem;
+    width: 100%;
+    height: 100%;
+    color: #495057;
+    border: 1px solid #d4d4d4;
+    font-weight: 500;
+    outline: none;
+    font-size: 1.4rem;
+
 }
 
-.input input{
-    padding: 1rem;
-    width: 100%;
-}
 
 .button{
     width: 100%;
@@ -629,7 +702,7 @@ textarea{
 
 .button button{
     width: 100%;
-    padding: 1rem 3rem;
+    padding: 1.2rem 3rem;
     background-color: #7004bc;
     color: white;
     border: none;
@@ -651,11 +724,14 @@ textarea{
 .location_container{
     width: 40%;
     padding: 4rem;
+    transform: translateX(150%);
+    animation:moving_right 1s ease-in-out forwards;
 }
 .location_container h1{
     font-size: 4rem;
     font-weight: 500;
-    color: rgb(43, 38, 38);
+    color: #404854;
+    margin-bottom: 1.6rem;
 
 }
 
@@ -667,16 +743,24 @@ textarea{
 }
 
 .address h3 i{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #7004bc;
     margin-right: 1.5rem;
 }
 
 .address h3{
-    font-size: 1.4rem;
-    margin: 4.5rem 0;
+    font-size: 1.6rem;
+    margin: 3.5rem 0;
     font-weight: 300;
+    color: #696969;
+    font-family: 'Roboto', sans-serif;
+    line-height: 15px;
+    letter-spacing: 0.2px;   
 
+}
+
+.email{
+    color: #3fa1ce;
 }
 
 
@@ -690,29 +774,40 @@ footer{
     padding: 7rem 5rem 5rem 5rem;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.socials span{
-    padding: 1.8rem;
-    border-radius: 50%;    
-    margin: 1rem 1rem;
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.socials span i{
-    font-size: 2rem;
+.social_icon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    color: rgb(158, 153, 153);
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
 }
 
-
-.socials span:hover{
-    background-color: rgb(87, 87, 223);
-    color: white;    
+.social_icon:hover{
+    background-color: #007aff;
+    color: white;
 }
 
-.socials i{
-    font-size: 1.5rem;
-    color: #696969;
+.social_icon i{
+    font-size: 1.8rem;
+    
 }
+
 
 .copyright{
 display: flex;
@@ -726,69 +821,5 @@ color: #696969;
 font-weight: 300;
 line-height: 30px;
 letter-spacing: 0.2px;
+font-size: 1.4rem;
 }
-
-
-/* ############### for mobile screen ############# */
-
-@media screen and (max-width: 1535px) {
-
-    .container{
-        width: 100%;
-    }
-    .main_section{
-        flex-direction: column;
-
-        padding: 1rem 0;
-    }
-
-    .about_first{
-        flex-direction: column;
-    }
-
-    .scroll_down{
-        display: none;
-    }
-
-    .about_second_part_container{
-        flex-direction: column;
-    }
-
-    .about_second_text{
-        margin-top: 2rem;
-    }
-
-    .directors{
-        flex-direction: column;
-    }
-
-  }
-
-  @media screen and (max-width: 1470px){
-
-    .our_blog_cards{
-        flex-direction: column;
-    }
-
-    .card{
-        margin: 2rem 0;
-        width: 50%;
-    }
-  }
-
-  @media screen and (max-width: 1400px){
-
-    .contact_container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form_container{
-        /* width: 90%; */
-    }
-    .location_container{
-        width: 90%;
-        text-align: center;
-    }
-  }
