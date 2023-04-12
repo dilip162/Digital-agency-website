@@ -71,8 +71,38 @@
 
 }
 
-@media screen and (max-width: 1024px){
-    
+@media screen and (max-width: 1135px){
+    .nav_container{
+        flex-direction: column;
+        height: 70vh;
+        display: none;
+    }
+
+    .navbar{
+        position: relative;
+    }
+
+    .nav_container ul{
+        flex-direction: column;
+    }
+
+    .nav_container ul li{
+        margin: 1rem 0;
+    }
+
+   .links_btn_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .links_btn ul li i{
+    margin: 0 1.8rem;
+   }
+
+   .hamberger_menu{
+    display: block;
+   }
 }
 
 
