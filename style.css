@@ -53,10 +53,6 @@ html{
 
 /* ################ home ############# */
 
-.navbar{
-    position: sticky;
-    top: 0;
-}
 
 nav{
     padding: 3.9rem 0;
