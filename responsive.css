@@ -18,6 +18,16 @@
         margin: 3rem 0;
     }
 
+    .about_second_img{
+        width: 80%;
+        margin: 5rem 0;
+    }
+
+
+    .about_second_img img{
+        width: 80%;
+    }
+
    
 
 }
@@ -60,6 +70,11 @@
     }
 
 }
+
+@media screen and (max-width: 1024px){
+    
+}
+
 
 @media screen and (max-width: 1024px) {
    

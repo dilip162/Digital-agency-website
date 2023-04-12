@@ -53,9 +53,19 @@ html{
 
 /* ################ home ############# */
 
+.navbar{
+    background: linear-gradient(to right, #3264f5 2%,#7004bc 82%);
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 500;
+    box-shadow: 1px 1px 4px#7004bc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 
 nav{
-    padding: 3.9rem 0;
+    padding: 4rem 0;
 }
 
 .nav_container{
